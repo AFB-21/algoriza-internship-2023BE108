@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>algoriza_internship_2023BE108.Core</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\algoriza-internship-2023BE108.Data\algoriza-internship-2023BE108.Data.csproj" />
+    <ProjectReference Include="..\algoriza-internship-2023BE108.Infrastructure\algoriza-internship-2023BE108.Infrastructure.csproj" />
+    <ProjectReference Include="..\algoriza-internship-2023BE108.Service\algoriza-internship-2023BE108.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+</Project>
